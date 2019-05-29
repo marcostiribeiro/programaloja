@@ -4,3 +4,9 @@ C:\arquivos\aulas 2019\Programação de computadores\avaliacao\ProgramaLoja\Prog
 C:\arquivos\aulas 2019\Programação de computadores\avaliacao\ProgramaLoja\ProgramaLoja\obj\Debug\ProgramaLoja.csprojResolveAssemblyReference.cache
 C:\arquivos\aulas 2019\Programação de computadores\avaliacao\ProgramaLoja\ProgramaLoja\obj\Debug\ProgramaLoja.exe
 C:\arquivos\aulas 2019\Programação de computadores\avaliacao\ProgramaLoja\ProgramaLoja\obj\Debug\ProgramaLoja.pdb
+C:\Users\Checkmarcos\Documents\GitHub\programaloja\ProgramaLoja\ProgramaLoja\bin\Debug\ProgramaLoja.exe.config
+C:\Users\Checkmarcos\Documents\GitHub\programaloja\ProgramaLoja\ProgramaLoja\obj\Debug\ProgramaLoja.exe
+C:\Users\Checkmarcos\Documents\GitHub\programaloja\ProgramaLoja\ProgramaLoja\obj\Debug\ProgramaLoja.pdb
+C:\Users\Checkmarcos\Documents\GitHub\programaloja\ProgramaLoja\ProgramaLoja\bin\Debug\ProgramaLoja.exe
+C:\Users\Checkmarcos\Documents\GitHub\programaloja\ProgramaLoja\ProgramaLoja\bin\Debug\ProgramaLoja.pdb
+C:\Users\Checkmarcos\Documents\GitHub\programaloja\ProgramaLoja\ProgramaLoja\obj\Debug\ProgramaLoja.csprojResolveAssemblyReference.cache

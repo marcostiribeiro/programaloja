@@ -23,21 +23,56 @@ namespace ProgramaLoja
             }
         }
 
-        public void AddTransacao(string ind, decimal valor)
+        public void AddTransacao(string ident, decimal valor)
         {
-            Transacao tr = new Transacao(ind, valor);
-            transacoes.Add(tr);
-        }
-        public void AddTransacao(Transacao trans)
-        {
+            Transacao trans = new Transacao(ident, valor);
             transacoes.Add(trans);
         }
+
+        public void AddTransacao(Transacao trans)
+        {
+            Transacoes.Add(trans);
+       }
+
 
         public List<Transacao> getLista()
         {
            return  transacoes;
 
         }
+        /// <summary>
+        /// Lista as transacoes realizadas
+        /// </summary>
+        public void extrato()
+        {
+            foreach (Transacao itemTrans in Transacoes)
+            {
+                Console.WriteLine("{0} {1} {2} ", itemTrans.idTransacao,itemTrans.identificacao,itemTrans.valor);
+            }
+        }
+
+
+        
+        /// <summary>
+        /// Realiza busca por id na classe
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Transacao</returns>
+
+        public Transacao buscaPorId(string id)
+        {
+            foreach (Transacao trans in Transacoes)
+            {
+              
+                if (trans.identificacao == id)
+                {
+                    return trans;
+                }
+            }
+            return null;
+        }
+
+
 
 
 
@@ -55,22 +90,7 @@ namespace ProgramaLoja
 
 
 
-        //private decimal saldo;
-        //public void credito(decimal valor)
-        //{
-        //    this.saldo = this.saldo + valor;
-        //}
-        //public void Debitar(decimal valor)
-        //{
-
-        //    this.saldo = this.saldo - valor;
-        //}
-
-        //public decimal getSaldo()
-        //{
-        //    return saldo;
-
-        //}
+     
 
 
 

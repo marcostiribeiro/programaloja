@@ -15,6 +15,7 @@ namespace ProgramaLoja
         private int idade;
 
 
+
         public Cliente(string nome)
         {
             this.nome = nome;
@@ -83,7 +84,10 @@ namespace ProgramaLoja
                 idade = value;
             }
         }
+        public Cliente()
+        {
 
+        }
         public Cliente(Conta conta, Endereco endereco, string cpf, string nome, int idade)
         {
             this.Conta = conta;

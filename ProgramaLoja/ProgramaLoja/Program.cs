@@ -10,50 +10,37 @@ namespace ProgramaLoja
     {
         static void Main(string[] args)
         {
-            Transacao tt = new Transacao("tesate", 500);
+            Endereco end = new Endereco(12, "rua 1", "bairro 1", "cidade 1");
+            Conta conta1 = new Conta();
+            Cliente cli = new Cliente(conta1, end, "11111111", "fulano", 20);
 
-            Conta conta = new Conta();
-            conta.AddTransacao("Debito", 10000);
-            conta.AddTransacao("Debito", 20000);
-            conta.AddTransacao("Debito", 30000);
-            conta.AddTransacao("Debito", 40000);
-            conta.AddTransacao("Debito", 50000);
-            conta.AddTransacao(tt);
-            
-            foreach (Transacao item in conta.Transacoes)
-            {
-                Console.WriteLine("Identificação {0} e valor {1}",item.identificacao,item.valor );
-            }
-            Console.WriteLine(conta.getSaldo());
+            cli.Conta.AddTransacao("Credito 1 ", 1000);
+            cli.Conta.AddTransacao("Credito 2 ", 1000);
+            cli.Conta.AddTransacao("Credito 3 ", 1000);
+            cli.Conta.AddTransacao("Credito 4 ", 1000);
+            cli.Conta.AddTransacao("Credito 5 ", 1000);
+            cli.Conta.AddTransacao("Pagamento 1 ", -1000);
+            cli.Conta.AddTransacao("Pagamento 2 ", -1000);
+
+
+            //imprimir dados do cliente
+
+            Console.WriteLine("Nome {0} CPF {1} e Idade {2} Endereco {3}{4}{5}{6}", cli.Nome, cli.Cpf, cli.Idade, cli.Endereco.Numero, cli.Endereco.Rua, cli.Endereco.Bairro, cli.Endereco.Cidade);
+
+
+            cli.Conta.extrato();
+            Console.WriteLine("Meu saldo é {0}", cli.Conta.getSaldo());
 
             Console.ReadKey();
 
-            
 
 
 
-            //Endereco endereco = new Endereco(12, "rua tal", "Bairro", "Cidade TAl");
-
-            //Cliente cliente1 = new Cliente(conta, endereco, "11111111", "Joao", 20);
-
-            //cliente1.Conta.credito(10000);
-            //Cliente cll1 = new Cliente("mm");
-            //Cliente cll2  = new Cliente("nn");
-            //Cliente cll3 = new Cliente("oo");
-            //Cliente cll4 = new Cliente("pp");
-
-            //List<Cliente> listaClientes = new List<Cliente>();
-            //listaClientes.Add(cll2);
-            //listaClientes.Add(cll1);
-            //listaClientes.Add(cll3);
-            //listaClientes.Add(cll4);
 
 
-            //foreach (Cliente cli in listaClientes)
-            //{
-            //    Console.WriteLine(cli.Nome);
-            //    Console.ReadKey();
-            //}
+
+
+
 
 
 
